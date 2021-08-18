@@ -13,7 +13,6 @@
       credentials: "include",
     });
 
-    auth = false;
     await goto("/login");
   };
 </script>
@@ -21,18 +20,6 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
   <div class="container">
     <a class="navbar-brand" href="/">Home</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon" />
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         {#if auth}
